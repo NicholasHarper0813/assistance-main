@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+    /* Change scrollbar track color */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    
+    /* Change scrollbar thumb color */
+    ::-webkit-scrollbar-thumb {
+        background-color: theme('colors.dark1');
+    }
+
+    body {
+        font-family: "Inter Display", sans-serif;
+        color: theme('colors.dark1')
+    }
+
+    /* Victor Serif */
+    @font-face {
+        src: url('./lib/fonts/victor-serif/VictorSerif-45RegularItalic.woff2') format('woff2-variations');
+        font-family:'Victor Serif';
+        font-style: normal;
+    }
+
+    @font-face {
+        src: url('./lib/fonts/victor-serif/VictorSerif-55MediumItalic.woff2') format('woff2-variations');
+        font-family:'Victor Serif';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    /* Inter Display */
+    @font-face {
+        src: url('./lib/fonts/inter-display/InterDisplay-Regular.woff2') format('woff2-variations');
+        font-family:'Inter Display';
+        font-style: normal;
+    }
+
+    @font-face {
+        src: url('./lib/fonts/inter-display/InterDisplay-Italic.woff2') format('woff2-variations');
+        font-family:'Inter Display';
+        font-style: italic;
+    }
+
+    @font-face {
+        src: url('./lib/fonts/inter-display/InterDisplay-Medium.woff2') format('woff2-variations');
+        font-family:'Inter Display';
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    @font-face {
+        src: url('./lib/fonts/inter-display/InterDisplay-MediumItalic.woff2') format('woff2-variations');
+        font-family:'Inter Display';
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    @font-face {
+        src: url('./lib/fonts/inter-display/InterDisplay-SemiBold.woff2') format('woff2-variations');
+        font-family:'Inter Display';
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    @font-face {
+        src: url('./lib/fonts/inter-display/InterDisplay-SemiBoldItalic.woff2') format('woff2-variations');
+        font-family:'Inter Display';
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    @font-face {
+        src: url('./lib/fonts/inter-display/InterDisplay-Bold.woff2') format('woff2-variations');
+        font-family:'Inter Display';
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    @font-face {
+        src: url('./lib/fonts/inter-display/InterDisplay-BoldItalic.woff2') format('woff2-variations');
+        font-family:'Inter Display';
+        font-style: italic;
+        font-weight: 700;
+    }
+
+    @font-face {
+        src: url('./lib/fonts/inter-display/InterDisplay-ExtraBold.woff2') format('woff2-variations');
+        font-family:'Inter Display';
+        font-style: normal;
+        font-weight: 800;
+    }
+
+    @font-face {
+        src: url('./lib/fonts/inter-display/InterDisplay-ExtraBoldItalic.woff2') format('woff2-variations');
+        font-family:'Inter Display';
+        font-style: italic;
+        font-weight: 800;
+    }
+
+    @font-face {
+        src: url('./lib/fonts/inter-display/InterDisplay-Black.woff2') format('woff2-variations');
+        font-family:'Inter Display';
+        font-style: normal;
+        font-weight: 900;
+    }
+
+    @font-face {
+        src: url('./lib/fonts/inter-display/InterDisplay-BlackItalic.woff2') format('woff2-variations');
+        font-family:'Inter Display';
+        font-style: italic;
+        font-weight: 900;
+    }
+
+}
+
+@layer utilities {
+    .container-custom {
+        max-width: 1728px;
+        padding-left: 144px;
+        padding-right: 144px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .container-custom {
+            padding-left: 64px;
+            padding-right: 64px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .container-custom {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+}
