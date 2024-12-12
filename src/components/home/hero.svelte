@@ -1,12 +1,9 @@
 <script lang="ts">
-	// Images
 	import HeroTitle from '$lib/svg/hero-title.svg';
 	import HeroTitleSmall from '$lib/svg/hero-title-small.svg';
-
 	import { onMount } from 'svelte';
 
 	const TAB_WIDTH = 768;
-
 	let windowWidth = 0;
 
 	onMount(() => {
