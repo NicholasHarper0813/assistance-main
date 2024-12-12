@@ -6,14 +6,12 @@
   $: if (dialog && showModal) dialog.showModal();
 </script>
 
-<!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
 <dialog
   bind:this={dialog}
   class="shadow"
   on:close={() => (showModal = false)}
   on:click|self={() => dialog.close()}
 >
-  <!-- svelte-ignore a11y-no-static-element-interactions -->
   <div on:click|stopPropagation>
     <slot name="header" />
     <div class="mb-8 flex justify-between items-center">
