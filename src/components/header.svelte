@@ -1,6 +1,5 @@
 <script lang="ts">
   import Logo from "$lib/svg/logo.svg";
-
   import { fade } from "svelte/transition";
 
   let isMenuOpen = false;
