@@ -1,8 +1,5 @@
 <script lang="ts">
-	// Components
 	import TrackTabBtn from '../ui/track-tab-btn.svelte';
-
-	// Images
 	import SolanaLogo from '$lib/svg/solana-logo.svg';
 	import TracksContainer from '$lib/images/tracks-container.png';
 	import TrackLeft from '$lib/svg/track-bottom-left.svg';
@@ -18,12 +15,14 @@
 	let activeTab = 'DePin';
 	let activeImage = DePinTrack;
 
-	function changeActiveTab(tab: string) {
+	function changeActiveTab(tab: string) 
+	{
 		activeTab = tab;
 		renderImages(tab);
 	}
 
-	function renderImages(tab: string) {
+	function renderImages(tab: string) 
+	{
 		switch (tab) {
 			case 'DePin':
 				activeImage = DePinTrack;
