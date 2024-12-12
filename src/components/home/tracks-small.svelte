@@ -12,7 +12,8 @@
 
 	let activeImage = DePinTrack;
 
-	function renderImages(tab: string) {
+	function renderImages(tab: string) 
+	{
 		switch (tab) {
 			case 'DePin':
 				activeImage = DePinTrack;
