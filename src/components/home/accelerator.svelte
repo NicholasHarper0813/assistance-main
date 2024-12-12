@@ -1,11 +1,10 @@
 <script lang="ts">
-	//   Images
+	import AcceleratorCard from '../ui/accelerator-card.svelte';
 	import PreSeed from '$lib/images/prize-img-1.png';
 	import Network from '$lib/svg/prize-img-2.svg';
 	import Mentorship from '$lib/svg/prize-img-3.svg';
 	import BgCloud from '$lib/images/bg-cloud-single.png';
 	import Title from '../ui/title.svelte';
-	import AcceleratorCard from '../ui/accelerator-card.svelte';
 </script>
 
 <section class="relative pt-40">
