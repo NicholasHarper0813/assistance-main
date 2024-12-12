@@ -1,8 +1,6 @@
 <script lang="ts">
-	// Components
 	import Title from '../ui/title.svelte';
 	import PrizeTooltip from '../ui/prize-tooltip.svelte';
-	//   Images
 	import PrizesClouds from '$lib/images/prizes-clouds.png';
 	import PrizesCenter from '$lib/images/prizes-center.png';
 	import PrizeQuadrant from '$lib/images/prizes-quadrant.png';
