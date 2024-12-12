@@ -2,12 +2,12 @@
 	import Judge from '$lib/images/judge.png';
 	import JudgeClouds from '$lib/images/judges-clouds.png';
 	import Cracks from '$lib/images/cracks.png';
-
 	import { onMount } from 'svelte';
 	import Title from '../ui/title.svelte';
 	let isMobile = false;
 
-	function checkIsMobile() {
+	function checkIsMobile() 
+	{
 		isMobile = window.innerWidth < 768;
 	}
 
