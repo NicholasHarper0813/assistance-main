@@ -1,15 +1,10 @@
 <script lang="ts">
-	// Components
 	import Marquee from 'svelte-fast-marquee';
-
-	// Icons
 	import Solana from './icons/solana.svelte';
 	import Logo from './icons/logo.svelte';
-
 	import { onMount } from 'svelte';
 
 	const TAB_WIDTH = 768;
-
 	let windowWidth = 0;
 
 	onMount(() => {
