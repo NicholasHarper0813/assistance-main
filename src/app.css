@@ -15,7 +15,8 @@
         background-color: theme('colors.dark1');
     }
 
-    body {
+    body 
+    {
         font-family: "Inter Display", sans-serif;
         color: theme('colors.dark1')
     }
