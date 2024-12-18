@@ -1,6 +1,5 @@
 <script lang="ts">
   import Logo from "../icons/logo.svelte";
-
   export let className: string = "";
 </script>
 
