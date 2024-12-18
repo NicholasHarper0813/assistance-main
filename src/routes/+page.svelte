@@ -1,25 +1,21 @@
 <script lang="ts">
-  // Components
   import Header from "../components/header.svelte";
   import Footer from "../components/footer.svelte";
   import Tracks from "../components/home/tracks.svelte";
-
-  // Images
-  import BgClouds from "$lib/images/bgClouds.png";
-  import FooterClouds from "$lib/images/footer-clouds.png";
-  import HeroElements from "$lib/images/hero-elements.png";
   import Judges from "../components/home/judges.svelte";
   import Accelerator from "../components/home/accelerator.svelte";
-  import Prizes from "../components/home/prizes.svelte";
-  import ElementCracks from "$lib/images/elementCracks.png";
-
-  import { onMount } from "svelte";
   import TracksSmall from "../components/home/tracks-small.svelte";
-  import Modal from "../components/ui/modal.svelte";
   import SolanaFoundation from "../components/icons/solana-foundation.svelte";
   import Colosseum from "../components/icons/colosseum.svelte";
+  import Prizes from "../components/home/prizes.svelte";
+  import Modal from "../components/ui/modal.svelte";
   import Hero from "../components/home/hero.svelte";
   import FooterTop from "../components/footer-top.svelte";
+  import FooterClouds from "$lib/images/footer-clouds.png";
+  import HeroElements from "$lib/images/hero-elements.png";
+  import ElementCracks from "$lib/images/elementCracks.png";
+  import BgClouds from "$lib/images/bgClouds.png";
+  import { onMount } from "svelte";
 
   let windowWidth = 0;
   let showModal = false;
@@ -61,8 +57,6 @@
             </div>
           </div>
         </div>
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
         <img
           src={HeroElements}
           alt=""
@@ -80,23 +74,16 @@
     </div>
   </div>
 
-  <!-- Accelerator -->
   <Accelerator />
-
-  <!-- Prizes -->
   <Prizes />
-
-  <!-- Tracks -->
   {#if windowWidth > 1024}
     <Tracks />
   {:else}
     <TracksSmall />
   {/if}
 
-  <!-- Judges -->
   <Judges />
 
-  <!-- Footer -->
   <div
     class="bg-cover bg-bottom"
     style="background-image: url({FooterClouds});"
